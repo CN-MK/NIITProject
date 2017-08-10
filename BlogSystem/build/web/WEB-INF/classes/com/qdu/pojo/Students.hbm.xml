@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-31 11:30:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.qdu.pojo.Students" table="Students" schema="dbo" catalog="NIIT2" optimistic-lock="version">
+        <id name="sid" type="string">
+            <column name="SID" length="12" />
+            <generator class="assigned" />
+        </id>
+        <property name="sname" type="string">
+            <column name="SName" not-null="true" />
+        </property>
+        <property name="spwd" type="string">
+            <column name="SPwd" length="10" not-null="true" />
+        </property>
+        <property name="sgender" type="string">
+            <column name="SGender" not-null="true" />
+        </property>
+        <property name="smobile" type="string">
+            <column name="SMobile" length="11" />
+        </property>
+        <property name="smajor" type="string">
+            <column name="SMajor" not-null="true" />
+        </property>
+        <property name="fans" type="int">
+            <column name="Fans" not-null="true" />
+        </property>
+        <set name="commentsForPid" table="comment" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PID" length="12" not-null="true" />
+            </key>
+            <one-to-many class="com.qdu.pojo.Comment" />
+        </set>
+        <set name="informations" table="Information" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="SID" length="12" not-null="true" />
+            </key>
+            <one-to-many class="com.qdu.pojo.Information" />
+        </set>
+        <set name="commentsForSid" table="comment" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="SID" length="12" not-null="true" />
+            </key>
+            <one-to-many class="com.qdu.pojo.Comment" />
+        </set>
+    </class>
+</hibernate-mapping>

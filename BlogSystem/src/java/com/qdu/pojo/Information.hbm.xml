@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-31 11:30:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.qdu.pojo.Information" table="Information" schema="dbo" catalog="NIIT2" optimistic-lock="version">
+        <id name="rid" type="int">
+            <column name="RID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="students" class="com.qdu.pojo.Students" fetch="select">
+            <column name="SID" length="12" not-null="true" />
+        </many-to-one>
+        <property name="photo" type="string">
+            <column name="photo" length="50" not-null="true" />
+        </property>
+        <property name="workExp" type="string">
+            <column name="WorkExp" not-null="true" />
+        </property>
+        <property name="skill" type="string">
+            <column name="Skill" not-null="true" />
+        </property>
+        <property name="selfAsse" type="string">
+            <column name="SelfAsse" />
+        </property>
+    </class>
+</hibernate-mapping>

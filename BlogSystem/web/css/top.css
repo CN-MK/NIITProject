@@ -1,0 +1,45 @@
+#Top {
+    width: 100%;
+	min-width:1000px;
+    background-color: #0EB8B7;
+    height: 115px;
+    background-image: url("../image/top_bg.png");
+    background-position: 1150px;
+    background-repeat: no-repeat;
+}
+
+    #Top .Top_Center {
+        width: 1000px;
+        margin: 0 auto;
+		position:relative;
+    }
+
+.Search {
+    width: 50%;
+    text-align: right;
+    padding-top: 45px;
+}
+
+    .Search .txtSearch {
+        border: 0;
+        width: 200px;
+        height: 35px;
+        font-size: 16px;
+        font-family: 'Microsoft YaHei';
+        padding-left: 10px;
+        color: #323232;
+        margin-right: -8px;
+    }
+
+    .Search .btnSearch {
+        border: 0;
+        background-color: #FE9901;
+        color: #fff;
+        width: 75px;
+        height: 35px;
+        font-size: 16px;
+        font-family: 'Microsoft YaHei';
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }

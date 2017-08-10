@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-31 11:30:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.qdu.pojo.Comment" table="comment" schema="dbo" catalog="NIIT2" optimistic-lock="version">
+        <id name="cid" type="int">
+            <column name="CID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="studentsByPid" class="com.qdu.pojo.Students" fetch="select">
+            <column name="PID" length="12" not-null="true" />
+        </many-to-one>
+        <many-to-one name="studentsBySid" class="com.qdu.pojo.Students" fetch="select">
+            <column name="SID" length="12" not-null="true" />
+        </many-to-one>
+        <property name="comment" type="string">
+            <column name="comment" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-31 11:30:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.qdu.pojo.Blog" table="blog" schema="dbo" catalog="NIIT2" optimistic-lock="version">
+        <id name="pid" type="int">
+            <column name="PID" />
+            <generator class="native" />
+        </id>
+        <property name="sid" type="string">
+            <column name="SID" length="12" not-null="true" />
+        </property>
+        <property name="majors" type="string">
+            <column name="Majors" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="Type" not-null="true" />
+        </property>
+        <property name="date" type="timestamp">
+            <column name="Date" length="23" not-null="true" />
+        </property>
+        <property name="blogtitle" type="string">
+            <column name="blogtitle" not-null="true" />
+        </property>
+        <property name="blogDesc" type="string">
+            <column name="blogDesc" />
+        </property>
+    </class>
+</hibernate-mapping>

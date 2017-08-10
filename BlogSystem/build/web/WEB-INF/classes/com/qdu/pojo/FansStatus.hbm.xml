@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-31 11:30:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.qdu.pojo.FansStatus" table="FansStatus" schema="dbo" catalog="NIIT2" optimistic-lock="version">
+        <id name="record" type="int">
+            <column name="Record" />
+            <generator class="assigned" />
+        </id>
+        <property name="pid" type="string">
+            <column name="PID" length="12" not-null="true" />
+        </property>
+        <property name="sid" type="string">
+            <column name="SID" length="12" not-null="true" />
+        </property>
+        <property name="astatus" type="java.lang.Integer">
+            <column name="Astatus" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="NIIT2" match-schema="dbo"/>
+  <table-filter match-name="Students"/>
+  <table-filter match-name="Admin"/>
+  <table-filter match-name="comment"/>
+  <table-filter match-name="Information"/>
+  <table-filter match-name="FansStatus"/>
+  <table-filter match-name="blog"/>
+</hibernate-reverse-engineering>

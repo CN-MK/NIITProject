@@ -1,0 +1,489 @@
+
+#Slide {
+    height: 450px;
+    width: 100%;
+	min-width:1000px;
+}
+
+#News {
+    width: 100%;
+	min-width:1000px;
+    height: 595px;
+    background-image: url('../image/news_bg.png');
+    background-position-x: 220px;
+    background-repeat: repeat-x;
+}
+
+    #News .News {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-color: #fff;
+        height: 500px;
+    }
+
+        #News .News ul li {
+            width: 315px;
+            height: 200px;
+            float: left;
+            border-top: 3px solid #0EB8B7;
+            margin-right: 30px;
+            font-family: 'Microsoft YaHei';
+            margin-bottom: 10px;
+        }
+
+            #News .News ul li .Title {
+                color: #333;
+                margin-top: 5px;
+                font-size: 17px;
+            }
+
+            #News .News ul li .Descption {
+                color: #A0A0A0;
+                margin-top: 10px;
+                font-size: 12px;
+            }
+
+                #News .News ul li .Descption a {
+                    color: #F83E01;
+                }
+
+.TopNews {
+    width: 690px;
+}
+
+.NewsTitle {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.Service {
+    width: 310px;
+    overflow: hidden;
+}
+
+.Item {
+}
+
+    .Item a {
+        display: block;
+        background-color: #EFEFEF;
+        margin-bottom: 10px;
+        width: 290px;
+        height: 50px;
+        color: #656565;
+        padding-left: 20px;
+        padding-top: 22px;
+        font-size: 20px;
+        color: #676767;
+        font-weight: bold;
+        font-family: 'Microsoft YaHei';
+    }
+
+        .Item a:hover {
+            background-color: #0EB8B7;
+            color: #fff;
+        }
+
+        .Item a span {
+            color: #D1D1D1;
+        }
+
+        .Item a img {
+            vertical-align: bottom;
+            margin-right: 10px;
+        }
+
+#JobFair {
+    width: 100%;
+	min-width:1000px;
+    height: 495px;
+    background-image: url('../image/playground_bg.png');
+    position: relative;
+}
+
+.Cover {
+    background-color: #000;
+    width: 100%;
+	min-width:1000px;
+    height: 495px;
+    filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.JobFair {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.JobFair_l {
+    margin-top: 55px;
+    width: 660px;
+    margin-right: 30px;
+}
+
+    .JobFair_l .title {
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Microsoft YaHei';
+        border-bottom: 2px solid #E5E5E5;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+
+        .JobFair_l .title span {
+            font-size: 18px;
+            color: #B2B2B2;
+        }
+
+.tabC ul li {
+    float: left;
+    font-size: 20px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.tabC ul li + li{
+	margin-left:25px;
+}
+
+.SelectNo {
+    color: #929292;
+}
+
+.SelectOn {
+    color: #fff;
+}
+
+.tabCon ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+    .tabCon ul li .tabConDate {
+        width: 68px;
+        height: 70px;
+        border: 1px solid #e5e5e5;
+    }
+
+        .tabCon ul li .tabConDate .tabConDate_t {
+            text-align: center;
+            font-size: 28px;
+            color: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            height: 40px;
+            padding-top: 8px;
+            font-weight: bold;
+        }
+
+        .tabCon ul li .tabConDate .tabConDate_b {
+            text-align: center;
+            font-size: 15px;
+            color: #c7c7c7;
+        }
+
+
+.tabConContent {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+    .tabConContent .tabConContent_t {
+        color: #f7f7f7;
+        font-family: 'Microsoft YaHei';
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+	
+    .tabConContent .tabConContent_t a{
+		color:#f7f7f7;
+	}
+
+    .tabConContent .tabConContent_d {
+        color: #e5e5e5;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+.tabConOpt a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    color: #fffffd;
+    border: 1px solid #fff;
+}
+
+.tabCon_More {
+}
+
+    .tabCon_More a {
+        font-size: 14px;
+        color: #fff;
+        font-family: 'Microsoft YaHei';
+    }
+
+.clickNo {
+    float: right;
+    width: 70px;
+}
+
+.clickOn {
+    background-color: #fff !important;
+}
+
+.clickNo li {
+    background-color: #ccc;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px !important;
+    border-radius: 5px;
+    float: left;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.liContent {
+    border-bottom: 0 !important;
+}
+
+.JobFair_r {
+    width: 310px;
+/*    margin-right: 30px;*/
+    margin-top: 55px;
+}
+
+    .JobFair_r .Calendar_Title {
+        width: 310px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Microsoft YaHei';
+        background-color: #0eb8b7;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+
+.ui-widget-content {
+    width: 302px !important;
+    height: 320px !important;
+}
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+        height: 25px !important;
+        text-align: center;
+        padding-top: 8px;
+    }
+
+.ui-widget-header {
+    background-color: #fff !important;
+    border: none !important;
+}
+
+#Recruit {
+    width: 100%;
+    height: 540px;
+}
+
+.Recruit {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.RecruitContent {
+    padding-right: 30px;
+}
+
+.Re_title {
+    width: 310px;
+	height:231px;
+    font-family: 'Microsoft YaHei';
+}
+
+    .Re_title ul li {
+        margin-bottom: 20px;
+    }
+
+.Re_title_l a {
+    width: 240px;
+    font-size: 14px;
+    color: #656565;
+    overflow: hidden;
+}
+
+.Re_title_r {
+    width: 70px;
+    font-size: 14px;
+    color: #999;
+    padding-top: 3px;
+    text-align: right;
+}
+
+.GreenTitle {
+    border-top: 3px solid #0EB8B7;
+    margin-bottom: 20px;
+}
+
+#Employment {
+    width: 100%;
+    height: 465px;
+    background-color: #E4E8EB;
+}
+
+.Employment {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+    .Employment .TapAll {
+        width: 660px;
+        margin-top: 30px;
+        margin-right: 30px;
+        background-color: #fff;
+        height: 405px;
+    }
+
+        .Employment .TapAll .tabtitle li {
+            width: 165px;
+            height: 35px;
+            float: left;
+            color: #fff;
+            background-color: #606060;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 15px;
+            font-family: 'Microsoft YaHei';
+            position: relative;
+            cursor: pointer;
+        }
+
+.tabcontent {
+    padding-top: 80px;
+    padding-left: 15px;
+}
+
+    .tabcontent ul li {
+        float: left;
+        list-style-image: url("../image/li_img.png");
+        list-style-position: inside;
+        margin-bottom: 15px;
+        width: 310px;
+    }
+
+        .tabcontent ul li a {
+            font-family: 'Microsoft YaHei';
+            font-size: 15px;
+            color: #656565;
+        }
+
+.Enterprise {
+    width: 296px;
+    background-color: #EEF3F7;
+    height: 445px;
+    padding-top: 20px;
+    padding-left: 12px;
+}
+
+.EnTitle {
+    color: #000;
+    font-family: 'Microsoft YaHei';
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.EnContent ul li {
+    margin-bottom: 10px;
+}
+
+    .EnContent ul li a img {
+        border: 3px solid #fff;
+    }
+
+#CommonLink {
+    height: 175px;
+    width: 100%;
+}
+
+.CommonLink {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.Link_l {
+    width: 450px;
+    padding-right: 50px;
+}
+
+    .Link_l .Link_title {
+        font-family: 'Microsoft YaHei';
+        font-size: 20px;
+        color: #484848;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #B5B9BC;
+        margin-bottom: 20px;
+    }
+
+.Link_item ul li {
+    float: left;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+    .Link_item ul li a {
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+        color: #484848;
+    }
+
+
+
+.Link_r {
+    width: 500px;
+    font-size: 0;
+}
+
+    .Link_r a {
+        display: block;
+        float: left;
+        margin-left: 5px;
+    }
+
+.Logo {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.GrayLine {
+    background-color: #e5e5e5;
+    margin-right: 30px;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.GrayLine2 {
+    background-color: #e5e5e5;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.More {
+    margin-top: 20px;
+}
+
+    .More a {
+        color: #656565;
+        font-size: 15px;
+    }
+
+    .More img {
+        vertical-align: bottom;
+    }
